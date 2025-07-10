@@ -12,6 +12,7 @@ start with logo_remover_SIFT.py (change the directories in main - sorry for this
 in case it takes long - you should split the video
 you can have a look to the cleaned_frames directory to check the mask generation is working
 if some of the logos are still there -> use the mask editor to manually update the masks.
+finally you need to copy the audio from the src to the output video
 
 ## Installation
 - Python 3
@@ -27,7 +28,8 @@ The scripts are some how dependent based on file system
 - masks -> the masks generated from the logos or by the manual editor
 - cleaned_frames -> the frames where the logo should be removed already
 
-
+On my Laptop a 5 minutes video takes about 25 minutes to be processed, in the logo_remover_SIFT.py you can switch from single threaded to multithreded and multitasking variants.
+For smaller videos this is ok, bigger videos I sliced into parts and executed on different PCs in parallel.
 
 ## Video Splitter Script "split_video.py"
 
