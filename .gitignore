@@ -1,3 +1,14 @@
+/in_logo/
+/masks/
+/frames/
+/cleaned_frames/
+/video_parts/
+/test_data/
+/old/
+
+/venv/
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
